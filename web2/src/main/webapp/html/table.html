@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>표 연습</title>
+</head>
+<body>
+
+	<!--  1행 1열 테이블 생성 -->
+	<!--  
+table : 테이블 생성
+tr : 행(row)을 정의
+td : 열(column)을 정의
+border : 표의 테두리를 출력 (값으로 테둘 두께 조정)
+width : 표의 가로길이
+height : 표의 세로길이
+align : 표의 위치
+bgcolor : 표의 색상
+cellspacing : 셀과 셀 사이의 간격을 설정(경계선의 두께)
+cellpadding : 셀의 테두리와 셀 안의 내용간의 간격을 설정
+colspan : 열 합치기
+ -->
+	<table border="10" width="200" height="200" align="center"
+		bgcolor="yellow" cellspacing="100" cellpadding="100">
+		<tr>
+			<td>1</td>
+		</tr>
+	</table>
+	<br>
+
+	<!--  1행 3열 테이블 생성 -->
+	<table border="1" width="300" height="200" align=center>
+		<tr align="center">
+			<td width="100">사자</td>
+			<td width="100">원숭이</td>
+			<td width="100">호랑이</td>
+		</tr>
+	</table>
+	<br>
+	<!-- 3행 1열 테이블 생성 -->
+	<table border=1 width=200 height=200 align=center>
+		<tr>
+			<td align=center>호랑이</td>
+		</tr>
+		<tr>
+			<td align=center>사자</td>
+		</tr>
+		<tr>
+			<td align=center>원숭이</td>
+		</tr>
+	</table>
+	<br>
+	<!--  colspan : 열 합치기 
+1. colspan 속성은 td, th 태그 안에서만 사용할 수 있다.
+2. colspan 속성값은 몇개의 열을 합치는 가에 따라 숫자를 지정합니다
+	<td colspan=3> : 3개의 열을 합치라는 의미
+
+-->
+
+	<table border=1 width=300 height=200 align=center>
+		<tr align=center>
+			<td colspan=3>동물</td>
+		</tr>
+		<tr align=center>
+			<td>호랑이</td>
+			<td>사자</td>
+			<td>원숭이</td>
+		</tr>
+
+
+	</table>
+	<br>
+
+
+
+	<table border=1 width=600 height=200 align=center>
+		<tr align=center>
+			<td colspan=3>동물</td>
+			<td align=center colspan=3>꽃</td>
+		</tr>
+		<tr align=center>
+			<td width=100>호랑이</td>
+			<td width=100>사자</td>
+			<td width=100>원숭이</td>
+			<td width=100>장비</td>
+			<td width=100>백합</td>
+			<td width=100>민들레</td>
+
+		</tr>
+	</table>
+	<br>
+
+	<!--  rowspan: 행(row)합치기 
+1. rowspan 속성은 행(row)을 합칠때 사용된다.
+2. rowspan 속성은 td,th 태그에서만 사용된다.
+3. rowspan 속성값은 몇개의 합치는가 숫자로 지정한다.
+<td rowspan=3> : 3개의 행을 합치라는 의미
+
+-->
+	<table border=1 width=400 height=600 align="center">
+		<tr>
+			<th rowspan=3>동물</th>
+			<td align="center">호랑이</td>
+		</tr>
+		<tr>
+			<td align="center">사자</td>
+		</tr>
+		<tr>
+			<td align="center">원숭이</td>
+		</tr>
+<tr>
+			<th rowspan=3>꽃</th>
+			<td align="center">장미</td>
+		</tr>
+		<tr>
+			<td align="center">백합</td>
+		</tr>
+		<tr>
+			<td align="center">민들레</td>
+		</tr>
+
+	</table>
+
+
+
+
+
+
+</body>
+</html>
